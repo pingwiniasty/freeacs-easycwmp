@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  easycwmp:
+    build: .
+    image: freeacs-easycwmp:latest
+    container_name: freeacs-easycwmp
+    stdin_open: true
+    tty: true

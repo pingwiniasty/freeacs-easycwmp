@@ -9,22 +9,22 @@ config local
 	option password admin
 	option provisioning_code ''
 #Logging levels: Critic=0, Warning=1, Notice=2, Info=3, Debug=4
-	option logging_level '3'
+	option logging_level '4'
 
 config acs
 	option url %ACS_URL%
-	option username easycwmp
-	option password easycwmp
+#	option username easycwmp
+#	option password easycwmp
 	option parameter_key ''
 	option periodic_enable '1'
-	option periodic_interval '100'
+#	option periodic_interval '100'
 	option periodic_time '0001-01-01T00:00:00Z'
 
 config device
 	option manufacturer easycwmp
 	option oui FFFFFF
 	option product_class easycwmp
-	option serial_number FFFFFF123456
-	option hardware_version example_hw_version
-	option software_version example_sw_version
+#	option serial_number FFFFFF123456
+#	option hardware_version example_hw_version
+#	option software_version example_sw_version
 

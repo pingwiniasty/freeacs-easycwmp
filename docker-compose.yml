@@ -2,8 +2,11 @@ version: '3'
 
 services:
   easycwmp:
-    build: .
-    image: freeacs-easycwmp:latest
-    container_name: freeacs-easycwmp
+    build: 
+      context: . 
+    container_name: goacs-easycwmp
     stdin_open: true
     tty: true
+    environment:
+      - ACS_URL=http://172.23.0.1:8085/acs
+      - DEVICE_SERIAL=DEADBEEF123456
